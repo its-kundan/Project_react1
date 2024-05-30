@@ -1,6 +1,6 @@
-import CardsContainer from './components/cards'
-import Timeline from './components/timeline'
-import Counter from './components/counter'
+import CardsContainer from './components/cards/CardsContainer.jsx'
+// import Timeline from './components/timeline'
+// import Counter from './components/counter'
 import './App.css'
 
 
@@ -9,9 +9,9 @@ function App() {
 
   return (
     <>
-      <Counter/>
+      {/* <Counter/> */}
       <CardsContainer/>
-      <Timeline/>
+      {/* <Timeline/> */}
     </>
   )
 }

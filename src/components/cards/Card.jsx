@@ -1,6 +1,8 @@
 // src/Card.js
 // import React from 'react';
 import styles from './Card.module.css';
+// import PropTypes from 'prop-types';
+// import {styles
 
 const Card = ({ heading, name, age, color, year, icon }) => {
   return (
