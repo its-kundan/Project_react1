@@ -1,7 +1,15 @@
+
+body {
+    background-color: white;
+  }
+.card{
+    display: flex;
+    justify-content: center;
+}
 .box {
     width: 350px;
     height: 600px;
-    background-color: #F0ECEB;
+    background-color: #dad6d5;
     border-radius: 150px / 150px; /* Completely rounded corners */
     margin: 20px;
     text-align: center;
@@ -20,13 +28,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: inset 0 0 15px rgba(2, 1, 1, 0.3);
+
   }
   
   .innerCircle {
-    width: 150px;
-    height: 150px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
-    background-color: #F0ECEB;
+    background-color: #f4f0ef;
     box-shadow: 0 0 15px rgba(2, 1, 1, 0.3); /* 30% shadow */
     display: flex;
     align-items: center;
@@ -44,6 +54,8 @@
   
   .paragraph {
     margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 3px;
     color: black;
   }
   
