@@ -1,0 +1,49 @@
+.box {
+    width: 350px;
+    height: 600px;
+    background-color: #F0ECEB;
+    border-radius: 150px / 150px; /* Completely rounded corners */
+    margin: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .outerCircle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: var(--outer-circle-color);
+    position: absolute;
+    top: -40px; /* Adjusted to touch the upper side of the box */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .innerCircle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #F0ECEB;
+    box-shadow: 0 0 15px rgba(2, 1, 1, 0.3); /* 30% shadow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    font-size: 100px;
+  }
+  
+  .heading {
+    margin-top: 310px; /* Adjusted to position below the outer circle */
+    color: var(--heading-color2);
+  }
+  
+  .paragraph {
+    margin-top: 10px;
+    color: black;
+  }
+  

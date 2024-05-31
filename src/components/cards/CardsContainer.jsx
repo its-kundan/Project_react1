@@ -1,19 +1,3 @@
-// // import React from 'react'
-
-// function Cards() {
-
-//   return (
-//     <div>
-      
-//     </div>
-//   )
-// }
-
-// export default Cards
-
-
-// src/CardsContainer.js
-// import React from 'react';
 import Card from './Card';
 import styles from './CardsContainer.module.css';
 
@@ -51,6 +35,49 @@ const CardsContainer = () => {
       year: 2023,
       icon: '📒',
     },
+    {
+      heading: 'Card 5',
+      name: 'Chris Lee',
+      age: 22,
+      color: '#FF1493',
+      year: 2024,
+      icon: '📕',
+    },
+    {
+      heading: 'Card 5',
+      name: 'Chris Lee',
+      age: 22,
+      color: '#FF1493',
+      year: 2024,
+      icon: '📕',
+    },
+    {
+      heading: 'Card 5',
+      name: 'Chris Lee',
+      age: 22,
+      color: '#FF1493',
+      year: 2024,
+      icon: '📕',
+    },
+
+    {
+      heading: 'Card 5',
+      name: 'Chris Lee',
+      age: 22,
+      color: '#FF1493',
+      year: 2024,
+      icon: '📕',
+    },
+
+    {
+      heading: 'Card 5',
+      name: 'Chris Lee',
+      age: 22,
+      color: '#FF1493',
+      year: 2024,
+      icon: '📕',
+    },
+
     {
       heading: 'Card 5',
       name: 'Chris Lee',
