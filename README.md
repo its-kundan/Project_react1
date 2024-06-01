@@ -27,3 +27,12 @@ Live Link: Comming soon
 3. use tailwind css for styling.
 4. vite not install unnecessary dependencies like `create-react-app`.
 5. module css is used for styling seperate components. css is global but module is not.
+
+
+
+
+### teaching Development => google, chatgpt, docs, 
+
+1. how to install react 
+    a. using `npm install create-react-app my-project1` , `npm install create-react-app .`
+    b. using vite 
