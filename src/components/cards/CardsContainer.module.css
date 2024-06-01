@@ -1,0 +1,23 @@
+/* src/CardsContainer.module.css */
+.container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+    scrollbar-width: thin; /* For Firefox */
+  }
+  
+  .container::-webkit-scrollbar {
+    height: 8px;
+    /* width: 4px; */
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  .container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
