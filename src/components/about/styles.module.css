@@ -1,6 +1,7 @@
 
 body {
     background-color: black;
+
   }
 .card{
     display: flex;
@@ -45,11 +46,13 @@ body {
   
   .icon {
     font-size: 100px;
+    background-color: #f4f0ef;
   }
   
   .heading {
     margin-top: 310px; /* Adjusted to position below the outer circle */
     color: var(--heading-color2);
+    background-color:#dad6d5 ;
   }
   
   .paragraph {
@@ -57,5 +60,6 @@ body {
     margin-left: 5px;
     margin-right: 3px;
     color: black;
+    background-color: #dad6d5;
   }
   

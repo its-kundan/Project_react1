@@ -4,20 +4,31 @@ import styles from './desk.module.css';
 
 const CardComponent = () => {
   return (
-    <div className={styles.card}>
-      <div className={styles.smallpart}>
-        <div className={styles.circle}>
-          <img src="src\components\desk\photo.jpeg" alt="Person" />
+    <div className={styles.desk}>
+
+
+        <div className={styles.titlec}>
+          <p className={styles.title}> CEO&apos;s Message</p>
         </div>
-        <div className={styles.name}>John Smith</div>
-        <div className={styles.position}>CEO</div>
-      </div>
-      <div className={styles.largepart}>
-        <p className={styles.quote}>
-          "This is an inspiring quote that captures the essence of leadership and vision."
-        </p>
-      </div>
+        <div className={styles.card}>
+          <div className={styles.smallpart}>
+            <div className={styles.circle}>
+              <img src="src\components\desk\photo2.jpeg" alt="Person" />
+            </div>
+            <div className={styles.name}>John Smith</div>
+            <div className={styles.position}>CEO</div>
+          </div>
+          <div className={styles.largepart}>
+              <div className={styles['quote-container']}>
+              <p className={styles['quote-text'] }>
+                This slide is 100% editable. Adapt it to your needs and capture your audiene &apos;s attention.
+              </p>
+             </div>
+          </div>
+        </div>
     </div>
+    
+    
   );
 };
 

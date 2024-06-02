@@ -1,102 +1,50 @@
-// import Card from './Card';
-import styles from './timeline.module.css';
-
-const YearBox = ()=>{
+const Timeline =({events})=>{
   return (
-    <div className="year-box" >
+    <div className =" flex flex-col gap-y-3 w-full my-4"> 
+      <Circle />
+      {events.map(event,key)=>{
+        <Fragment key = {key}>
+           <div className="grid grid-cols-[1fr-auto-1fr] gap-x-2 items-center mx-auto">
+            {event.direction === 'left' ?Circle(
+              <EventCard heading = events={.heading} subHeading = {event.subHeading} />
+            ) :(
+              <div></div>
+            )
+            }
+           </div>
+           {key<(events.length-1) && <Circle />}
+        </Fragment>
+      }}
+
+      <Circle />
 
     </div>
   )
 }
 
-const Pillar = ()=>{
+const Circle = () => {
+  return (<div className="rounded-full w-4 h-4 bg-blue-500 mx-auto">
+
+  </div>)
+}
+
+const Pillar =() =>{
   return (
-    <div className="pillar" >
+    <div className="rounded-t-full rounded-b-full w-2 h-full bg-blue-500 mx-auto">
 
     </div>
+
   )
 }
 
-const EventCard = ({heading,discription})=>{
+const EventCard =({heading, subHeading}) =>{
   return (
-    <div className="eventcard">
-      <div> {heading}</div>
-      <div> {discription}</div>
-    </div>
-  )
-}
-
-const Timeline=({events})=>{
-  return (
-    <div className=''>
-      <YearBox/>
-      {events.map((event,key)=>
-      <Fragment key ={key}>
-        <div
-
-      </Fragment>
-      )}
+    <div className="flex flex-col gap-y-2 border shadow-md rounded-x1 p-4">
+      <div className ="text-blue-800 font-bold text-lg border-b"> {heading}</div>
+      <div className = "text-sm text-gray-700"> {subHeading}</div>
     </div>
   )
 }
 
 
-
-
-
-
-
-
-
-
-// const timeline = () => {
-  
-
-// const timelineData = [
-//   {
-//     year: '2000',
-//     title: 'Organised Classroom',
-//     description: 'Classroom organised ',
-//     icon: 'paper-plane',
-//     color: '#007bff',
-//   },
-//   {
-//     year: '2001',
-//     title: 'Computer Lab',
-//     description: 'Digitalisation with Computers.',
-//     icon: 'inbox',
-//     color: '#17a2b8',
-//   },
-//   {
-//     year: '2002',
-//     title: 'TLabs and Laboratory',
-//     description: 'Practicle knowledge',
-//     icon: 'calendar',
-//     color: '#ffc107',
-//   },
-//   {
-//     year: '2003',
-//     title: 'Sport Ground',
-//     description: 'Sport Ground with football, cricket, kabbaddi',
-//     icon: 'thumbs-up',
-//     color: '#dc3545',
-//   },
-//   {
-//     year: '2004',
-//     title: 'Transport',
-//     description: 'Bus and Magic services available',
-//     icon: 'globe',
-//     color: '#6f42c1',
-//   },
-// ];
-
-
-//   return(
-//     <div className={styles.timeline}>
-//       {timelineData.map((card,index)=>(
-//         <Card key={index} {...card} />
-//       ))}
-//     </div>
-//   )
-// };
-export default timeline;
+export default Timeline;
